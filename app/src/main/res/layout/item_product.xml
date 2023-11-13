@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentStart="true"
+            />
+    <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/productImageView"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+
+    <TextView
+            android:id="@+id/productCostTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productNameTextView"
+            android:layout_toEndOf="@+id/productImageView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:gravity="end"/>
+
+    <TextView
+            android:id="@+id/productDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_below="@+id/productCostTextView"
+            android:layout_toEndOf="@+id/productImageView"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"/>
+
+    <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productCostTextView"
+            android:layout_toEndOf="@+id/productImageView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:text="Add"/>
+
+</RelativeLayout>
